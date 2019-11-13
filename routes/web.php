@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('read/','NotesController@read');
+
 Route::get('/', function () {
     return view('welcome');
 });
