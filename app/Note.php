@@ -26,7 +26,9 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Note extends Model
 {
-    //
+
+    //protected $hidden=['id'];
+
     public function user(){
         $this->belongsTo('App\User');
     }

@@ -5,12 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NotesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NotesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Note.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Note.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_13_214241_create_notes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_13_214241_create_notes_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/NotesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/NotesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +162,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573658967934</updated>
       <workItem from="1573658969283" duration="140000" />
-      <workItem from="1573679237716" duration="8042000" />
+      <workItem from="1573679237716" duration="10616000" />
     </task>
     <servers />
   </component>
