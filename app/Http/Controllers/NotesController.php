@@ -56,7 +56,7 @@ class NotesController extends Controller
         //$cNote = $noteObj::where('note_id','=',$id)->get();
         $cNote = $noteObj::whereId($id)->get();
         if (count($cNote) == 0) {
-            return response()->json('Not Found', 404);
+            return response()->json('404 Not Found', 404);
         }
         $note = $cNote[0];
         foreach ($request->all() as $property => $value) {
@@ -105,14 +105,14 @@ class NotesController extends Controller
         //$cNote = $noteObj::where('note_id','=',$id)->get();
         $cNote = $noteObj::whereId($id)->get();
         if (count($cNote) == 0) {
-            return response()->json('Not Found', 404);
+            return response()->json('404 Not Found', 404);
         }
         $note = $cNote[0];
         try {
             $note->delete();
             return response()->json($note, 200);
         } catch (\Exception $e) {
-            return response()->json('Bad Request: ' . $e->getMessage(), 400);
+            return response()->json('400 Bad Request: ' . $e->getMessage(), 400);
         }
     }
 }
