@@ -13,6 +13,15 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::post('note/create/','NotesController@create');
+
+Route::get('note/read/','NotesController@read');
+Route::get('note/read/{id?}/','NotesController@readId');
+
+Route::put('note/update/{id?}/','NotesController@update');
+
+Route::delete('note/delete/{id?}/','NotesController@delete');
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
