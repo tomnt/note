@@ -180,6 +180,11 @@ return [
          */
         App\Providers\NoteServiceProvider::class,
 
+        /**
+         * Basic Authentication
+         */
+        Olssonm\VeryBasicAuth\VeryBasicAuthServiceProvider::class,
+
     ],
 
     /*

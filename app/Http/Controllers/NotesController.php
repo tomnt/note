@@ -77,9 +77,9 @@ class NotesController extends Controller
         /**
          * @var Note $note
          */
-        $note = app()->make(Note::class);
+        //$note = app()->make(Note::class);
+        $note = new Note();
         $note = $note::select('notes.id AS note_id','notes.*','users.*');
-
         foreach ($arrParam as $property => $value) {
             if (is_numeric($value)) {
                 $note = $note->where('notes.' . $property, '=', $value);
@@ -87,7 +87,6 @@ class NotesController extends Controller
                 $note = $note->where('notes.' . $property, 'LIKE', "%$value%");
             }
         }
-        //$note = $note->join('users', 'notes.user_id', '=', 'users.user_id');
         $note = $note->join('users', 'notes.user_id', '=', 'users.id');
         try {
             return \Response::json($note->paginate(10), 200);
@@ -102,8 +101,7 @@ class NotesController extends Controller
          * @var Note $note
          */
         $noteObj = app()->make(Note::class);
-        //$cNote = $noteObj::where('note_id','=',$id)->get();
-        $cNote = $noteObj::whereId($id)->get();
+        $cNote = $noteObj::whereId($id);
         if (count($cNote) == 0) {
             return response()->json('404 Not Found', 404);
         }
