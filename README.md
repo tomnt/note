@@ -10,6 +10,9 @@ cd note
 
 # Obtaining dependencies
 composer install
+
+# Starting service
+php artisan serve
 ```
 
 ## Basic Authentication
