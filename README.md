@@ -1,4 +1,27 @@
-# Note
+# Notes API
+This is a simple API built on top of Laravel for "notes" application.
+
+<b>User</b>:<br>
+A user in the system. It contains the following fields:
+ - Email: Non-blank, valid email address, unique
+ - Password: Non-blank, at least 8 characters
+ - Create Time
+ - Last Update Time
+
+<b>Note</b>:<br>
+A note in the system. Notes are associated with Users. A user can have many notes. A note has the following fields:
+ - Title: Non-blank, max 50 characters long
+ - Note: max 1000 long
+ - Create Time
+ - Last Update Time
+
+<b>RESTful API</b>:<br>
+ - Design and build a RESTful API to allow CRUD operations on notes. 
+ - Support JSON for requests and responses. 
+ - Note access should be restricted to the owner of the note.
+
+<b>Authentication</b>:<br>
+Use Basic HTTP Authentication.
 
 ## Program files set up
 ```
@@ -16,11 +39,11 @@ php artisan serve
 ```
 
 ## Basic Authentication
- - Username: user
- - Password: password
+ - Username:  <i>user</i>
+ - Password:  <i>password</i>
 
 The username and password are being defined at;<br>
-config/very_basic_auth.php
+<i>config/very_basic_auth.php</i>
 
 ## Create [POST]
 ```

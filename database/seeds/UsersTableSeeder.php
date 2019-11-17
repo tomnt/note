@@ -16,7 +16,7 @@ class UsersTableSeeder extends Seeder
             $user = new \App\User();
             $user->name = $faker->name;
             $user->email = $faker->email;
-            $user->password = $faker->password;
+            $user->password = $faker->password(8);
             try{
                 $user->save();
             }catch(\Exception $e){
