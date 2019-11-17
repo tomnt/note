@@ -19,6 +19,9 @@ php artisan serve
  - Username: user
  - Password: password
 
+The username and password are being defined at;<br>
+config/very_basic_auth.php
+
 ## Create [POST]
 ```
 curl -X POST "http://127.0.0.1:8000/api/note/" -d "user_id=1&title=Foo!" --user user:password
